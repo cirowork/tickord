@@ -2,37 +2,30 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Tickord - Sistema Ticket Globale</title>
+    <title>Tickord </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body style="margin:0;background:#05060a;font-family:system-ui;color:white;">
 
     <section style="padding:120px 8%;text-align:center;">
-        <h1 style="font-size:36px;">Tickord — Sistema Ticket Globale</h1>
+        <h1 style="font-size:36px;">Dashboard Globale</h1>
 
-        <!-- INVITA IL BOT -->
-        <button onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=TUO_CLIENT_ID&permissions=8&scope=bot%20applications.commands'"
+        <!-- LOGIN DISCORD -->
+        <button onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1533153442212872273&redirect_uri=https://verifica-discord.onrender.com/auth&response_type=code&scope=identify%20guilds'"
                 style="background:#4da3ff;color:#000;border:none;padding:12px 22px;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;">
-            Invita il Bot
+            Accedi con Discord
         </button>
 
         <br><br>
 
-        <!-- CREA PANNELLO -->
-        <button onclick="fetch('https://verifica-discord.onrender.com/create-panel')"
+        <!-- DASHBOARD -->
+        <button onclick="window.location.href='https://verifica-discord.onrender.com/dashboard'"
                 style="background:#4da3ff;color:#000;border:none;padding:12px 22px;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;">
-            Crea Pannello Ticket
-        </button>
-
-        <br><br>
-
-        <!-- APRI TICKET -->
-        <button onclick="fetch('https://verifica-discord.onrender.com/open-ticket')"
-                style="background:#4da3ff;color:#000;border:none;padding:12px 22px;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;">
-            Apri Ticket
+            Vai alla Dashboard
         </button>
     </section>
 
 </body>
 </html>
+
